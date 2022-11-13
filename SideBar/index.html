@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    <title>SideBar</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <header>
+          <img class="logo" src="/assets/logo.svg" alt="Logo" />
+          <img
+            src="/assets/alinhar-justificar.svg"
+            alt="Menu"
+            onclick="toggleMenu()"
+          />
+        </header>
+        <input type="text" placeholder="🔍 Buscar" />
+
+        <div class="icon">
+          <img src="/assets/aplicativos.svg" alt="" />
+          <p>Dashboard</p>
+        </div>
+        <div class="icon">
+          <img src="/assets/pata.svg" alt="" />
+          <p>Pets</p>
+        </div>
+        <div class="icon">
+          <img src="/assets/do-utilizador.svg" alt="" />
+          <p>Clientes</p>
+        </div>
+
+        <div class="icon">
+          <img src="/assets/user-md.svg" alt="" />
+          <p>Vets</p>
+        </div>
+        <div class="icon">
+          <img src="/assets/settings.svg" alt="" />
+
+          <p>Ajustes</p>
+        </div>
+      </nav>
+      <nav-footer>
+        <div class="user">
+          <img src="assets/do-utilizador.svg" alt="User" />
+          <div class="name">
+            <p>Nome</p>
+            <small>Título</small>
+          </div>
+        </div>
+        <img src="assets/log-out.svg" alt="Sair" />
+      </nav-footer>
+    </div>
+  </body>
+</html>

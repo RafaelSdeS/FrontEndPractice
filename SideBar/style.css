@@ -1,0 +1,120 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+	--light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  transition-duration: 0.3s;
+}
+
+body{
+  background-color: var(--body-bg-color);
+}
+
+
+img.logo{
+  height: auto;
+  width: auto;
+}
+
+img{
+  height: 25px;
+  width: 25px;
+
+  cursor: pointer;
+}
+
+.nav-container{
+  background-color: var(--green);
+  width: max(20%, 10rem);
+  padding: 0rem 1rem;
+
+  height: 100vh;
+
+  position: relative;
+}
+
+
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+
+  height: 100%;
+
+  position: relative;
+
+}
+
+nav > *{
+  margin: 1rem 0
+}
+
+
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input{
+  border: none;
+  padding: 1rem 0;
+
+  width: 80%;
+  background-color: var(--light-green);
+}
+
+.icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
+.icon > p{
+  margin: 0rem 1rem
+}
+
+nav-footer{
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+
+  background-color: var(--light-green);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav-footer img{
+  height: auto;
+}
+
+.user{
+  width: 40%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hidden{
+
+  display: none;
+}
+
+.hiddenNav{
+  width: 5% ;
+}

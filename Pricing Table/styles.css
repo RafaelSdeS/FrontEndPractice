@@ -1,0 +1,214 @@
+:root{
+--yellow: #ffcc29;
+--blue: #1d539e;
+--gray: #828799;
+--page-background: #f9fbfc;
+--font: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: var(--font);
+
+}
+
+ul{
+  list-style-image: url('./assets/check.svg')
+}
+
+.divider{
+  content: '';
+  background: var(--gray);
+  height: 1px;
+  width: 70%;
+  opacity: 0.3;
+  margin-top: 1rem;
+}
+
+.blue-bg{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  background: var(--blue);
+
+  width: 100%;
+  height: 50%;
+}
+
+.white-bg{
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+
+  background: var(--page-background);
+
+  width: 100%;
+  height: 50%;
+}
+
+.yellow-bg{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  background: var(--yellow);
+
+  width: 100%;
+  height: 15%;
+
+  
+  border-radius: 0.5rem 0.5rem 0 0 ;
+
+  opacity: 0;
+
+  transition-duration: 0.3s;
+
+}
+
+.container{
+  margin: 0rem 4rem;
+}
+
+header{
+  padding: 1rem;
+
+  color: white;
+}
+
+header h2,
+header p{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+header h2{
+  font-size: 48px;
+  font-weight: 700;
+}
+
+header p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header{
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cards-container .card{
+  margin: 2rem 2rem;
+
+  border-radius: 0.5rem;
+  
+  background: white;
+
+  height: 62vh;
+  width: 30%;
+
+  position: relative;
+
+  transition-duration: 0.3s;
+
+}
+
+
+.card .name,
+.card .detail,
+.card .price,
+.card .list,
+.card small{
+  margin: 0.5rem;
+}
+
+.name-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 1rem 0rem;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0.5rem;
+
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+ul{
+  list-style-position:inside;
+  text-align: left;
+}
+
+.list li{
+  margin: 1rem 0;
+
+  color: var(--gray);
+  
+  font-size: 14px;
+  font-weight:400;
+  
+}
+
+button{
+  background: white;
+  color: var(--blue);
+
+  font-weight:600;
+  font-size: 18px;
+
+  padding: 1rem 5rem;
+
+  cursor: pointer;
+
+  border: 1px solid var(--blue);
+  border-radius: 0.5rem;
+
+  transition-duration: 0.3s;
+}
+
+button:hover{
+  color: white;
+  background: var(--blue);
+}
+
+.card:hover .yellow-bg{
+  opacity: 1;
+}
+
+.card:hover{
+  scale: 1.2;
+}
+
+
+
