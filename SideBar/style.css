@@ -34,7 +34,7 @@ img{
 
 .nav-container{
   background-color: var(--green);
-  width: max(20%, 10rem);
+  width: clamp(15vw, 20%, 10rem);
   padding: 0rem 1rem;
 
   height: 100vh;
@@ -56,7 +56,15 @@ nav{
 }
 
 nav > *{
-  margin: 1rem 0
+  margin: 1.5rem 0
+}
+
+.hiddenNav nav {
+  align-items: center;
+} 
+
+.hiddenNav nav header {
+  justify-content: center
 }
 
 
@@ -69,7 +77,7 @@ header{
 
 input{
   border: none;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
 
   width: 80%;
   background-color: var(--light-green);
