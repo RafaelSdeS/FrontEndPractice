@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color: rgb(112, 128, 144);
+    --title-font-size: 36px;
+    --text-font-size: 24px;
+    --text-font: Ubuntu ;
+    --text-color: rgb(250, 250, 250)
+
+}
+
+body{
+    background-color: rgb(199, 195, 204);
+    color: var(--text-color);
+    font-family: var(--text-font)
+}
+
+.searchMenu{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem ;
+
+}
+
+.searchMenu #search, 
+.searchMenu button{
+    padding: 0.6rem;
+    border: none;
+    font-family: var(--text-font)
+}
+
+.searchMenu #search{
+    border-radius: 1rem 0 0 1rem;
+}
+
+.searchMenu button{
+    background-color: rgb(226, 226, 226);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.card{
+    background-color: var(--bg-color);
+    background-image: linear-gradient(-40deg, rgb(60, 60, 143), rgb(126, 145, 230));
+    width: fit-content;
+    max-width: 70vw;
+    height: fit-content;
+    border-radius: 70px 20px 30px 10px;
+    margin: 2rem auto;
+
+    display: grid;
+    grid-gap: 1rem;
+    
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+
+}
+
+.introduction{
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    
+
+    padding: 1rem;
+
+    font-size: var(--text-font-size);
+}
+
+.introduction > * {
+    margin: 1rem auto;
+    padding: 0 2rem 0 2rem ;
+    max-height: 100%;
+}
+
+.introduction #name {
+    font-size: var(--title-font-size);
+}
+
+img{
+    width: 12rem;
+
+    align-self: center;
+    margin: 3rem 5rem 0 0;
+
+    border-radius: 60px 20px 40px 10px;
+    border: 3px solid rgb(140, 125, 194);
+}
+
+.details{
+    grid-column: 1/3 ;  
+    
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    font-size: var(--text-font-size);
+
+    background-color: rgba(65, 90, 136, 0.4);
+
+    border-radius: 40px 30px 20px 10px;
+    
+    margin: auto 2rem 1rem 2rem;
+    padding: 0.5rem;
+}
+
+.details > *{
+    margin: 0.4rem; 
+    padding: auto;
+}
+
+@media (max-width: 720px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction{
+        padding: 1rem 1rem 0 1rem
+    }
+
+    img{
+        margin: auto;
+    }
+}
